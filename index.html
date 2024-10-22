@@ -4,129 +4,384 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
-      integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- index.html file -->
-    <script src="src/require.config.js"></script>
-    <script
-      data-main="src/main"
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"
-    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
-
-    <title>Document</title>
+    <title>AB</title>
   </head>
   <body>
-    <header class="header">
-      <img src="assets/images/logo.png" alt="Logo" class="header__logo" />
-      <div class="header__menu">
-        <div class="header__menu-item">AB Vietnam</div>
-        <div class="header__menu-item">Who we are</div>
-        <div class="header__menu-item">Our product</div>
-        <div class="header__menu-item">Certification</div>
-        <div class="header__menu-item">Blog</div>
-        <div class="header__menu-item">Event</div>
-        <div class="header__menu-item">Packaging</div>
-        <div class="header__menu-item">Contact</div>
-      </div>
-      <div class="header__right">
-        <div class="header__right-search-icon">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-              stroke="#525F7A"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M22 22L20 20"
-              stroke="#525F7A"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+    <section class="flex overflow-hidden flex-col bg-white">
+      <header class="flex flex-wrap gap-3 justify-center items-center w-full bg-white shadow-sm max-md:max-w-full z-[2]">
+        <div class="flex flex-col justify-center self-stretch px-8 py-2.5 my-auto max-md:px-5">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd6996e4e1f6b609c79364e29d4556d05748026f4ba02aff28f3f2bb43958603?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="AB Vietnam Logo" class="object-contain aspect-[1.84] w-[81px]" />
         </div>
-        <div class="header__right-flag">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="18"
-              viewBox="0 0 24 18"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_6143_793)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M-1.5 0H25.5V18H-1.5V0Z"
-                  fill="#DA251D"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M15.2906 13.3946L12.1406 11.0497L9.01172 13.4157L10.1719 9.5626L7.04297 7.18252L10.9137 7.14736L12.116 3.30127L13.3359 7.13682L17.2066 7.14033L14.0953 9.54502L15.2871 13.3981L15.2906 13.3946Z"
-                  fill="#FFFF00"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_6143_793">
-                  <rect width="24" height="18" rx="4" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+        <nav class="flex flex-wrap items-center self-stretch my-auto text-base font-semibold min-w-[240px] text-slate-900 max-md:max-w-full">
+          <div class="flex relative flex-col self-stretch px-3 py-5 my-auto text-red-700">
+            <div class="z-0">AB Vietnam</div>
+            <div class="flex absolute bottom-0 inset-x-6 z-0 h-1.5 bg-red-700 rounded-xl min-h-[6px] w-[67px]"></div>
           </div>
-          <span>VN</span>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-            >
-              <path
-                d="M13.2802 5.96655L8.93355 10.3132C8.42021 10.8266 7.58021 10.8266 7.06688 10.3132L2.72021 5.96655"
-                stroke="#7D88A1"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <a href="#" class="self-stretch px-3 py-5 my-auto">Who we are</a>
+          <a href="#" class="self-stretch px-3 py-5 my-auto">Our product</a>
+          <a href="#" class="self-stretch px-3 py-5 my-auto whitespace-nowrap">Certification</a>
+          <a href="#" class="self-stretch px-3 py-5 my-auto whitespace-nowrap">Blog</a>
+          <a href="#" class="self-stretch px-3 py-5 my-auto whitespace-nowrap">Event</a>
+          <a href="#" class="self-stretch px-3 py-5 my-auto whitespace-nowrap">Packaging</a>
+          <a href="#" class="self-stretch px-3 py-5 my-auto whitespace-nowrap">Contact</a>
+        </nav>
+        <div class="flex flex-wrap justify-end flex-1 shrink gap-3 items-center self-stretch py-2 pr-8 pl-2 my-auto basis-6 min-w-[240px] max-md:pr-5 max-md:max-w-full">
+          <button class="flex gap-2.5 items-center self-stretch p-3 my-auto w-12 h-12 bg-slate-100 rounded-[999px]" aria-label="Search">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f548269a471c87a09a8e642130202ecb4f9184a1ed97fcb75edf9d0f9df6cd73?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain self-stretch my-auto w-6 aspect-square" />
+          </button>
+          <div class="flex gap-2.5 items-center self-stretch p-3 my-auto text-base font-semibold whitespace-nowrap bg-slate-100 rounded-[999px] text-slate-900">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/32f43f3703ba8b1a86c7160f270e8cbc96795dc589ddaa6c924764906a9dabb1?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Language flag" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+            <span class="self-stretch my-auto">VN</span>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf719f3cc73d34d182e2cba9ad8be475174b9d9dbed2f9a7109cf823cb0df4e7?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
+          </div>
+          <a href="#" class="flex justify-center items-center self-stretch px-4 py-3 my-auto text-base font-semibold text-center text-white whitespace-nowrap bg-red-700 rounded-[99px]">
+            <span class="gap-2.5 self-stretch px-2 my-auto">Contact</span>
+          </a>
+        </div>
+      </header>
+      <main>
+        <section class="flex z-10 flex-col self-center max-w-full text-center relative w-screen h-screen -top-[64px] z-[1]">
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[2]">
+            <h1 class="text-6xl font-bold text-white leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
+              Raise your glass to unforgettable moments
+            </h1>
+            <a href="#" class="flex justify-center items-center self-center px-4 py-3 mt-8 text-base font-semibold text-red-700 bg-white rounded-[99px]">
+              <span class="gap-2.5 self-stretch px-2 my-auto">Discover products</span>
+            </a>
+          </div>
+          <div class="flex absolute top-0 bottom-0 left-0 right-0 flex-col mt-0 w-full max-md:mt-0 max-md:max-w-full">
+            <img loading="lazy" src="assets/images/section_1.png" alt="Background image of people enjoying drinks" class="object-cover h-screen z-0 w-full max-md:max-w-full" />
+          </div>
+          <div class="flex absolute top-0 w-full bg-black bg-opacity-40 max-md:max-w-full top-0 left-0 right-0 bottom-0 "></div>
+        </section>
+        <section class="-mt-[50vh] -top-[50vh] flex overflow-hidden relative z-10 flex-col px-16 mt-0 w-full text-4xl font-semibold leading-10 text-center min-h-[768px] pt-[672px] text-slate-900 max-md:px-5 max-md:pt-24 max-md:mt-0 max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca604bbdad8e4309c19c87ae97e971c285e8f73e1e93559c2036ca454fc042d5?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-cover absolute inset-0 size-full" />
+          <p class="z-[2]">Available in over 60 countries worldwide <br /> <span class="text-slate-900">our products are trusted globally.</span></p>
+        </section>
+        
+        <section class="flex flex-col w-full max-md:max-w-full">
+          <div class="flex flex-wrap gap-8 items-center px-0 py-12 shadow-lg">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0f9231f139dce2a08349128721c7ab38a06cfa9c512af442c5c987e5c87b2c2?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa4b0de6065afd0d790f965cfcc9ee90ba36852321859a84e6cb4da1ca43cea6?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/04bcafc5f633e4fcf1612186e919b3de64385b2e9fde35d3bdd427c6cd465f9a?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b52a2781fb24cee987cec60b3380ce6a2924dfabc6405cd9b266a862657ab9c2?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d28f6b04f87b14d3c4bc40db21732eb229d6345e6685c3c46400e0bf15c0cbf9?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/258f284309716769248fc77fb3e53bbe1be07ac75d1f427d4cdca5f88986684b?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6566c8ea6e7113a7bd535aef545dfd288ea15a7fe6602fa86d7357e2e446a3f?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c4c132796207d591a3208920ae5b6e58ac75d17dfff7bb00cff60c5b2e575fa?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/dfd16ed9f596b71ea5643d0be0ea89b1ea3d1674e48c49e570934ce86b97c33c?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/feb709caf6a5f36cd31cd30a32883760e27147631b2f6382a08f60bbf4dcfbf3?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5f2663a1df10cdfaca2da2e585fc3eec8c74b287e82646f5f313fc75c3136a97?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/76d768ef185181f06939ccf0a4c0c9776a75381e888161d8c1c0ecd468a608f1?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[90px]" />
+          </div>
+          <div class="flex shrink-0 self-center mt-16 max-w-full h-[429px] w-[1320px] max-md:mt-10"></div>
+          <section class="flex relative z-10 flex-col px-16 pt-28 pb-24 mt-6 w-full text-4xl font-bold leading-10 text-center uppercase min-h-[332px] text-slate-900 max-md:px-5 max-md:pb-28 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/35d2296c9c20d0a41c9aa0673b1dd14ea4aee50003ed019a9280ffe302d00dd3?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-cover absolute inset-0 size-full" />
+            <h2><span class="text-red-700">Alcoholic</span> <br /> Beverages</h2>
+          </section>
+          <div class="flex relative flex-col mt-0 w-full max-md:mt-0 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb33c8eee443d14dcce172ddf7f86beb9ae5068ee5f216ed437618fda0b71215?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Alcoholic beverages showcase" class="object-contain z-0 w-full aspect-[1.6] max-md:max-w-full" />
+            <div class="flex absolute inset-x-0 top-2/4 z-0 w-full -translate-y-2/4 bg-black bg-opacity-40 h-[900px] min-h-[900px] translate-x-[0%] max-md:max-w-full"></div>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/dfa2e63548de382ab1ce2fc413f042465235c623b4c1f9f8dc6f23850167b31f?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Featured alcoholic beverage" class="object-contain z-10 self-center mt-0 ml-48 max-w-full aspect-[0.63] w-[313px] max-md:mt-0" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11d102165399abddbbbd01a071f926075759644f61797781079868de94e92565?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Alcoholic beverages lineup" class="object-contain mt-28 w-full aspect-[1.6] max-md:mt-10 max-md:max-w-full" />
+          <div class="flex gap-4 items-center pt-4 pb-16 pl-4 bg-white">
+            <div class="flex overflow-hidden flex-col self-stretch my-auto w-80 rounded-2xl min-w-[240px]">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fd7fd7fe000d0cfab71aa4a3e1bef93802c84e8b3eea41394f065b1ad82c316?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Beverage product" class="object-contain w-full aspect-[1.6]" />
+            </div>
+            <div class="flex overflow-hidden flex-col self-stretch my-auto w-80 rounded-2xl min-w-[240px]">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c66c6eaa13327107c784101567ef79515bd5ae66eb1fc9b21fcc154b0e28033?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Beverage product" class="object-contain w-full aspect-[1.6]" />
+            </div>
+            <div class="flex overflow-hidden flex-col self-stretch my-auto w-80 rounded-2xl min-w-[240px]">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/af05b17623c1b93adbc1c6df8f87ae098ea7f0f563ea9c560ef5fb61274ec8f5?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Beverage product" class="object-contain w-full aspect-[1.6]" />
+            </div>
+            <div class="flex overflow-hidden flex-col self-stretch my-auto w-80 rounded-2xl min-w-[240px]">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7bfd4b696efb8145cc7a264f2925e6f8d0fae860171561f66761d7dc0f44ec9c?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Beverage product" class="object-contain w-full aspect-[1.6]" />
+            </div>
+            <div class="flex overflow-hidden flex-col self-stretch my-auto w-80 rounded-2xl">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9c4924d9df48042d52ab7a103ea0480c33d5a69570e7e3f187719364bb7aea0?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="More products indicator" class="object-contain w-20 aspect-[0.4]" />
+            </div>
+          </div>
+          <section class="flex relative z-10 flex-col px-16 pt-24 pb-28 w-full text-4xl font-bold leading-10 text-center uppercase min-h-[332px] text-slate-900 max-md:px-5 max-md:pb-28 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/35d2296c9c20d0a41c9aa0673b1dd14ea4aee50003ed019a9280ffe302d00dd3?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-cover absolute inset-0 size-full" />
+            <h2><span class="text-red-700">Non - Alcoholic</span> <br /> Beverages</h2>
+          </section>
+          <div class="flex relative flex-col mt-0 w-full max-md:mt-0 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb2481b76ecf136b9910bfdae44703e288c990e9af7e73cf28dc917a7477f4cc?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Non-alcoholic beverages showcase" class="object-contain z-0 w-full aspect-[1.6] max-md:max-w-full" />
+            <div class="flex absolute inset-x-0 top-2/4 z-0 w-full -translate-y-2/4 bg-black bg-opacity-40 h-[900px] min-h-[900px] translate-x-[0%] max-md:max-w-full"></div>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9422b200cb5c810f13ce5220a10186a6f11f1f591b7c1eb3c6c486d23abaee0b?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Non-alcoholic beverages lineup" class="object-contain w-full aspect-[1.6] max-md:max-w-full" />
+          <section class="flex relative flex-col w-full max-md:max-w-full">
+            <div class="flex z-0 flex-col items-center pt-24 w-full max-md:max-w-full">
+              <h2 class="text-4xl font-bold leading-10 text-center text-red-700 uppercase w-[644px] max-md:max-w-full">
+                Reviews <br /> <span class="text-slate-900">from Our Happy Customers</span>
+              </h2>
+              <div class="flex gap-6 items-start pl-16 mt-12 w-full max-md:pl-5 max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-col justify-center p-2 bg-yellow-50 rounded-3xl min-h-[440px] min-w-[240px] w-[300px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f3d128222dcabf0c96f8e856e14af14b52fb4010a8f1a8cc7fe72974d846582?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Customer review" class="object-contain flex-1 w-full rounded-2xl aspect-[0.67]" />
+                <div class="flex flex-col p-4 bg-yellow-50 rounded-3xl min-w-[240px] w-[300px]">
+                  <div class="flex flex-col w-full">
+                    <div class="flex gap-2 items-center self-center">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/dde0d541133ea90070e02a425e92d971aedc70add57d24718738bae6a38d71ca?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/34a3a0b62d0bc8328f755efe640fccb76ded166cd619c1486f03539d0f7a062b?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5e848f420114162783b6e59ba36c3968cca333d0cb8afcd7cf8293e2fc8f1b4?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/52ff946d708a860608142186412e40fe68bf6e6c7b75ec1cac37f9dd405e0752?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/04cbe0f6f8cd5b71fbf58226bf6a4b9df7e78e26f58d6ad173ff83e54e5d1363?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </div>
+                    <p class="mt-2 text-sm font-medium leading-5 text-center text-slate-900">
+                      The presentation was simple yet elegant. Served in a glass with a slice of lemon and just the right amount of ice, it looked refreshing and inviting. I appreciated that it wasn't too watery, which is sometimes a problem with cold drinks. The balance of strength and chill was perfect.
+                    </p>
+                  </div>
+                  <p class="mt-4 text-base font-semibold text-center text-slate-900">Karlis</p>
+                </div>
+                <div class="flex flex-col justify-center p-2 bg-yellow-50 rounded-3xl min-h-[440px] min-w-[240px] w-[300px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f3d128222dcabf0c96f8e856e14af14b52fb4010a8f1a8cc7fe72974d846582?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Customer review" class="object-contain flex-1 w-full rounded-2xl aspect-[0.67]" />
+                </div>
+                <div class="flex flex-col p-4 bg-yellow-50 rounded-3xl min-w-[240px] w-[300px]">
+                  <div class="flex flex-col w-full">
+                    <div class="flex gap-2 items-center self-center">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/baadccc973bc37243ffc3e560863021adb6b4df1cccbc62757df35760768211d?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/306222f8ecfe75f7cf3ef731d5c480247b46c97e4195632bbf2e1f1edc1a29f7?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f125d7a0c477f60e58a8b8b81ebf1587a7cc3fe834e44a560e550f97a5f0eaf?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec80a241fdf80c1ecd43737b86dd6c651f42cf1f610319330eff5e467e297f62?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3be317b5dd0d928b3fb1e4d14952e936e82b29247c871c06ec0a52907f94a0a4?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </div>
+                    <p class="mt-2 text-sm font-medium leading-5 text-center text-slate-900">
+                      In terms of pricing, it was a little on the higher side compared to other places, but given the quality and the overall experience, I think it was worth it. The staff was friendly, and they even offered suggestions on how to pair the drink with some of their pastries.
+                    </p>
+                  </div>
+                  <p class="mt-4 text-base font-semibold text-center text-slate-900">Josh</p>
+                </div>
+                <div class="flex flex-col justify-center py-2 pl-2 bg-yellow-50 rounded-3xl min-h-[440px] w-[300px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8433315c0d489fbe1f98c86d621d6afd140f516b02802e27457e7deb1c9ddf6d?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="More reviews indicator" class="object-contain flex-1 rounded-2xl aspect-[0.18] w-[76px]" />
+                </div>
+              </div>
+            </div>
+            <div class="flex z-0 flex-col items-center pt-24 w-full max-md:max-w-full">
+              <h2 class="text-4xl font-bold leading-10 text-center text-red-700 uppercase w-[644px] max-md:max-w-full">
+                Together with <br /> <span class="text-slate-900">Our Valued Partners</span>
+              </h2>
+              <div class="flex flex-wrap gap-10 px-20 mt-12 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2473df46c54dcb788c0e1ccc4ec51d3bd71befdb133f396eaa3268e636ac3b87?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 max-w-full aspect-[1.36] w-[163px]" />
+                <div class="flex gap-10">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3379a0de263b8925ef4f24bb5646e8d43e710680b6e89c6785650f9b505739c?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 max-w-full aspect-[1.36] w-[163px]" />
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1f76506a2101caf5518720c931867366cede789e53046da32927438217ffb58?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Partner logo" class="object-contain shrink-0 max-w-full aspect-[1.31] w-[157px]" />
+                </div>
+              </div>
+            </div>
+            <div class="absolute right-0 z-0 px-16 pb-7 bottom-[-147px] h-[299px] w-[1440px] max-md:px-5 max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col">
+                <div class="flex flex-col w-[16%] max-md:ml-0 max-md:w-full">
+                  <div class="flex shrink-0 h-[152px] w-[172px] max-md:mt-10"></div>
+                </div>
+                <div class="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
+                  <div class="grow mt-3.5 max-md:mt-10">
+                    <div class="flex gap-5 max-md:flex-col">
+                      <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                        <div class="flex shrink-0 h-[139px] w-[209px]"></div>
+                      </div>
+                      <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b97633bcb9d282926952637f5e4df3b573ca79a0c13f9ea64bb1b1bb2119921c?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain grow shrink-0 mt-36 max-w-full aspect-[1.74] w-[209px] max-md:mt-10" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+                  <div class="mt-3.5 max-md:mt-10 max-md:max-w-full">
+                    <div class="flex gap-5 max-md:flex-col">
+                      <div class="flex flex-col w-[61%] max-md:ml-0 max-md:w-full">
+                        <div class="flex shrink-0 h-[138px] w-[204px] max-md:mt-10"></div>
+                      </div>
+                      <div class="flex flex-col ml-5 w-[39%] max-md:ml-0 max-md:w-full">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/372f3477abbf8d0e85a953547df58b4184b9ddb2f76485ce184090a2a4fe812d?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain grow shrink-0 mt-36 max-w-full aspect-[1.73] w-[133px] max-md:mt-10" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mt-24 w-full max-w-[1380px] max-md:mt-10 max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col">
+              <div class="flex flex-col w-[21%] max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col max-md:mt-5">
+                  <div class="flex relative flex-col items-end px-14 pt-60 pb-8 max-w-full rounded-3xl aspect-[0.876] w-[268px] max-md:px-5 max-md:pt-24">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3358d9ca8203e3dd00363460136f10bb1f6cdcbc00c40892a5725177424f46d5?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Product showcase" class="object-cover absolute inset-0 size-full" />
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/73f60cb9e061f27ab8b55ae4d5bbdf6a609794d9367d1480d66c8bc532a83e1e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain aspect-[0.81] w-[30px]" />
+                  </div>
+                  <div class="flex flex-col items-end pl-14 mt-8 max-md:pl-5">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c61d3c8a3d924fea268415a7968b0c3dc0cc5715d492b228cf612c8e889a6ab2?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Product showcase" class="object-contain max-w-full rounded-3xl aspect-[1.01] w-[196px]" />
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/73f60cb9e061f27ab8b55ae4d5bbdf6a609794d9367d1480d66c8bc532a83e1e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain mt-24 aspect-[0.81] w-[30px] max-md:mt-10 max-md:mr-2.5" />
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col ml-5 w-[79%] max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col mt-16 w-full max-md:mt-10 max-md:max-w-full">
+                  <div class="flex gap-5 justify-between items-start">
+                    <div class="flex flex-col self-start">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc2eff0f106046b99369d30eb754cd25e2355905078511c2caf347c988d8a7a7?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain ml-9 w-10 aspect-[0.93] max-md:ml-2.5" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a52384ddc3918c5a803a683aaadf26005dcad8dcc52a51eb54cf6f9a26e1b802?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Product showcase" class="object-contain mt-11 w-full rounded-3xl aspect-[1.01] max-md:mt-10" />
+                    </div>
+                    <div class="flex flex-col my-auto">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/35fef3b85b8cfa71a83fa71a5a2cd696012e34c856dd0fedb58eb8a0a5beede2?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain ml-3.5 aspect-[0.54] w-[33px] max-md:ml-2.5" />
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/53abf86e9526b0d971a4c4942879f2f8b1fe3e54d49f8d5f0eb889da1dd358b5?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Product showcase" class="object-contain mt-10 rounded-3xl aspect-[1.01] w-[149px] max-md:mt-10" />
+                    </div>
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6447ea2277bdc3a99c0006c9a623ec7d5fe116c19234766657c96846bb69140?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Decorative element" class="object-contain shrink-0 self-start mt-20 aspect-[0.83] w-[50px] max-md:mt-10" />
+                    <div class="flex flex-col self-end p-6 mt-14 border-2 border-red-700 border-dashed rounded-[32px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+                      <div class="flex flex-col w-full text-center text-slate-900 max-md:max-w-full">
+                        <h3 class="text-3xl font-semibold leading-10 max-md:max-w-full">
+                          <span class="text-red-700">Need Beverages Exported</span> from Vietnam?
+                        </h3>
+                        <p class="mt-3.5 text-lg leading-7 max-md:max-w-full">
+                          A&B Vietnam is your one-stop solution for premium beverages with a wide range of unique flavors.
+                        </p>
+                      </div>
+                      <form class="flex flex-wrap gap-10 justify-between items-center py-1 pr-1 pl-6 mt-6 w-full text-base bg-slate-100 rounded-[48px] max-md:pl-5 max-md:max-w-full">
+                        <label for="emailInput" class="sr-only">Your email address</label>
+                        <input type="email" id="emailInput" placeholder="Your email address" aria-label="Your email address" class="self-stretch my-auto text-slate-400 bg-transparent border-none outline-none flex-grow" />
+                        <button type="submit" class="gap-2 self-stretch px-4 py-3 my-auto font-medium tracking-wide leading-snug text-white whitespace-nowrap bg-red-700 rounded-[40px]">
+                          Subscribe
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="max-w-full w-[503px]">
+                    <div class="flex gap-5 max-md:flex-col">
+                      <div class="flex flex-col w-[69%] max-md:ml-0 max-md:w-full">
+                        <div class="flex shrink-0 mx-auto max-w-full rounded-3xl bg-red-700 bg-opacity-0 h-[304px] w-[329px] max-md:mt-6"></div>
+                      </div>
+                      <div class="flex flex-col ml-5 w-[31%] max-md:ml-0 max-md:w-full">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d2e92aa15554533b9ff0ac996e803b7c8e6e4d27f1ca84038cb98a199ed013e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Product showcase" class="object-contain shrink-0 mt-7 max-w-full rounded-3xl aspect-square w-[149px] max-md:mt-10" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+      <footer class="flex flex-col mt-48 w-full bg-slate-50 rounded-[64px_64px_0px_0px] max-md:mt-10 max-md:max-w-full">
+        <div class="self-center w-full max-w-[1328px] max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col">
+            <div class="flex flex-col w-[35%] max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col max-md:mt-10">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d84a3f14ac9e648f3565b3046a04155ab916b5551dd9d0ab8f97dbbe40a5b0eb?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="AB Vietnam Logo" class="object-contain max-w-full aspect-[1.49] w-[179px]" />
+                <div class="flex flex-col items-start mt-4 w-full">
+                  <p class="self-stretch text-sm leading-5 text-slate-900">
+                    A&B Vietnam is a pioneering company in the large-scale manufacture and export of beverages to over 60 countries worldwide. With over 30 years of spreading unique flavors, we are committed to always satisfying customers with products that meet international standards and fast, dedicated delivery services.
+                  </p>
+                  <div class="flex gap-2 items-center mt-6">
+                    <a href="#" aria-label="Facebook">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b2aac85698cd7a40c39cad74b54dcb5dc2bec40aa4196b1f1f7a8ea7ef3bc390?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f2245196a04888a994627a710ed4f5a2182ad81f67c09356d04448ffb8c32a2d?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0871dd49209efbfcde4ad97ff149f8738aefb10d1e1b7a3b4d049ba950430a63?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/89acd9ffcde40cef22dd4fc2163b421184333de1e62b1072bc5892a0545a611e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/92632771e63742035394945963c1bffbe8971b0b6f96f3402feb5967a0fbdb92?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0acdd1789fe6f5d937fb1b7744e71939eb34ce7fed829c477304ebd51f8c049e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/22a5df2fb3f567735e92a88e373c0fc06830686aac8dbd0787daa700b9eeac21?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/639a86e60e13b3a20d5e75c7511ca420858df8a428c827090ffbddc4a2eee90e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/245b2dbcf47b5bf3948fc073f0e6740177a95f30c31f8106ea7d14f9f4d801e9?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                    <a href="#" aria-label="WeChat">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d02b716ae8681e2fcf14cf0531126d1ad37a0ed751c80c3bdcc940b1ef65e86e?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.97] rounded-[999px] w-[33px]" />
+                    </a>
+                  </div>
+                  <div class="flex gap-6 items-center mt-6">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/510619dd054a6aaed390ad5b96aef5a7f44b763a6581386d371d65740feb23f9?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="App Store" class="object-contain shrink-0 self-stretch my-auto aspect-[2.02] w-[105px]" />
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a44fc2a19669c42feaf06a12403640c2b9dfb4f4e7b45f6d3ab5f5e2222ce008?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Google Play" class="object-contain shrink-0 self-stretch my-auto aspect-[2.02] w-[105px]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col ml-5 w-[65%] max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col mt-8 w-full max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-wrap gap-8 items-start w-full leading-snug max-md:max-w-full">
+                  <div class="flex flex-col flex-1 shrink text-base tracking-wide basis-0 min-w-[240px]">
+                    <div class="flex flex-col w-full">
+                      <h3 class="font-semibold text-red-700">Export</h3>
+                      <div class="flex flex-col mt-2 w-full text-slate-900">
+                        <p><span class="font-semibold">Tell:</span> +84 929 909 595</p>
+                        <p class="mt-1"><span class="font-semibold">Email:</span> rose@abvietnam.com.vn</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mt-4 w-full">
+                      <h3 class="font-semibold text-red-700">Export</h3>
+                      <div class="flex flex-col mt-2 w-full text-slate-900">
+                        <p><span class="font-semibold">Tell:</span> +84 929 909 595</p>
+                        <p class="mt-1"><span class="font-semibold">Email:</span> rose@abvietnam.com.vn</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-8 items-start min-w-[240px] w-[486px] max-md:max-w-full">
+                    <div class="flex flex-col flex-1 shrink basis-0">
+                      <h3 class="text-base font-semibold tracking-wide text-red-700">Product</h3>
+                      <nav class="flex flex-col mt-2 w-full text-sm tracking-wide text-slate-900">
+                        <a href="#">Beer</a>
+                        <a href="#" class="mt-1">Energy Drink</a>
+                        <a href="#" class="mt-1">Juice</a>
+                        <a href="#" class="mt-1">Fruit Milk</a>
+                        <a href="#" class="mt-1 leading-5">Another Alcoholic Beverage</a>
+                      </nav>
+                    </div>
+                    <div class="flex flex-col flex-1 shrink basis-0">
+                      <h3 class="text-base font-semibold tracking-wide text-red-700">Useful Link</h3>
+                      <nav class="flex flex-col mt-2 w-full text-sm tracking-wide text-slate-900">
+                        <a href="#">Purchase Policy</a>
+                        <a href="#" class="mt-1">How To Order</a>
+                        <a href="#" class="mt-1">Privacy Policy</a>
+                        <a href="#" class="mt-1">Shipping Policy</a>
+                      </nav>
+                    </div>
+                    <div class="flex flex-col flex-1 shrink basis-0">
+                      <h3 class="text-base font-semibold tracking-wide text-red-700">Services</h3>
+                      <nav class="flex flex-col mt-2 w-full text-sm tracking-wide text-slate-900">
+                        <a href="#">Purchase Policy</a>
+                        <a href="#" class="mt-1">How To Order</a>
+                        <a href="#" class="mt-1">Privacy Policy</a>
+                        <a href="#" class="mt-1">Shipping Policy</a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-8 items-start mt-8 w-full max-md:max-w-full">
+                  <div class="flex flex-col grow shrink min-w-[240px] w-[359px]">
+                    <h3 class="text-base font-semibold tracking-wide leading-snug text-red-700">Address</h3>
+                    <address class="flex flex-col mt-2 w-full text-sm tracking-wide leading-5 text-slate-900 not-italic">
+                      <p><span class="font-semibold">Head office:</span> No145 Dinh Xuyen, Dinh Xuyen Commune, Gia Lam District, Hanoi, Vietnam</p>
+                      <p class="mt-1"><span class="font-semibold">Branch:</span> No116 Tue Tinh, Nguyen Du ward, Hai Ba Trung District, Hanoi, Vietnam</p>
+                      <p class="mt-1"><span class="font-semibold">Factory:</span> Ho town, Thuan Thanh District, Bac Ninh Province, Viet Nam</p>
+                      <p class="mt-1"><span class="font-semibold">Beer Factory:</span> Cam Tuyen Industrial Cluster, Cam Tuyen Commune, Cam Lo District, Quang Tri Province</p>
+                    </address>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c135be2b9f2d10404f26f579b2dbb1c73c76fbe7945c7d7af1922173a182229?placeholderIfAbsent=true&apiKey=bb8dbc989cc34660ac54425ea8f28286" alt="Map location" class="object-contain grow shrink rounded-xl aspect-[1.52] min-w-[240px] w-[244px]" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="header__right-button"><span>Contact</span></button>
-      </div>
-    </header>
-    <main id="fullpage">
-      <section class="section active main__part-1">
-        <h2>Raise your glass to unforgettable moments</h2>
-        <button>Discover products</button>
-      </section>
-      <section class="section"></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </main>
-    <footer>
-      <div class="footer__copyright">
-        <p>Copyright 2024 © A&B Vietnam Company | All Rights Reserved</p>
-      </div>
-    </footer>
+        <div class="gap-2.5 self-stretch px-96 py-3 mt-12 text-sm leading-none text-center text-white bg-red-700 max-md:px-5 max-md:mt-10">
+          Copyright 2024 © A&B Vietnam Company | All Rights Reserved
+        </div>
+      </footer>
+    </section>
   </body>
 </html>
